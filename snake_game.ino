@@ -267,8 +267,8 @@ public:
 			return CHSV(head_hue + (index*8), sat, val);
 
 		} else if (mode == STRIPED) {
-			CRGB first_color = CHSV(head_hue, sat, val);
-			CRGB second_color = CHSV(head_hue + 32, sat, val); //Blue-is hue
+			CRGB first_color = CRGB(237, 112, 90); //Light Pink
+			CRGB second_color = CRGB(230, 53, 100); //Bright Pink
 			if (index % 4 <= 1 ) {	return first_color;} 
 			else {					return second_color;}
 
