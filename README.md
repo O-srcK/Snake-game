@@ -94,7 +94,7 @@ This is correct for the specific board used in this project.
 
 ## Notes
 
-- The apple spawning logic is intentionally naive because the board is only 64 pixels wide, so practical simplicity is preferred over extra optimization.
+- The apple spawning logic is intentionally simplistic because the board is only 64 pixels wide, so practical simplicity is preferred over extra optimization. (otherwise a free-cells tracker can be implemented to allow for O(1) selection (removal) of an empty cell, and also O(1) insertion of an empty cell.
 - The game uses a full redraw each frame, which keeps the rendering logic clean and makes the color modes easier to manage.
 - If you change to a serpentine matrix later, only the `XY()` mapping function needs to be updated.
 
@@ -113,5 +113,4 @@ snake-game/
 ```
 
 ## License
-
-Add your preferred license here.
+MIT License
