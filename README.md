@@ -109,8 +109,12 @@ This is correct for the specific board used in this project.
 ```text
 snake-game/
 ├── snake-game.ino
+├── snake-terminal.cpp
 └── README.md
 ```
+## Terminal version
+
+You can also download and compile the c++ code for the game and run it in the terminal directly
 
 ## License
 MIT License
